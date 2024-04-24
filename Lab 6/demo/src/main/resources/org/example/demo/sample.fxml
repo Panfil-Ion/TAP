@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.demo.Controller">
+  <Circle fx:id="circle" fill="DODGERBLUE" layoutX="1000.0" layoutY="700.0" radius="25.0" />
+  <Line fx:id="line" startX="250.0" startY="350.0" endX="300.0" endY="300.0" stroke="BLACK" strokeWidth="2.0" />
+  <Rectangle fx:id="rectangle" fill="Yellow" layoutX="1400.0" layoutY="700.0" width="50.0" height="50.0"  />
+  <Button layoutX="650.0" layoutY="450.0" mnemonicParsing="false" onAction="#startAnimation" text="Start" />
+  <Button layoutX="750.0" layoutY="450.0" mnemonicParsing="false" onAction="#resetAnimation" text="Reset" />
+</AnchorPane>
