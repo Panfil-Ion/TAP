@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.demo.Controller">
-  <Circle fx:id="circle" fill="DODGERBLUE" layoutX="1000.0" layoutY="700.0" radius="25.0" />
-  <Line fx:id="line" startX="250.0" startY="350.0" endX="300.0" endY="300.0" stroke="BLACK" strokeWidth="2.0" />
-  <Rectangle fx:id="rectangle" fill="Yellow" layoutX="1400.0" layoutY="700.0" width="50.0" height="50.0"  />
-  <Button layoutX="650.0" layoutY="450.0" mnemonicParsing="false" onAction="#startAnimation" text="Start" />
-  <Button layoutX="750.0" layoutY="450.0" mnemonicParsing="false" onAction="#resetAnimation" text="Reset" />
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.Controller">
+  <children>
+    <Circle fx:id="circle" fill="DODGERBLUE" layoutX="126.0" layoutY="135.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+    <Button fx:id="startButton" text="Start" layoutX="20" layoutY="20" />
+    <Button fx:id="stopButton" text="Stop" layoutX="80" layoutY="20" />
+    <Label fx:id="label" text="Status: Running" layoutX="20" layoutY="50" />
+  </children>
 </AnchorPane>
